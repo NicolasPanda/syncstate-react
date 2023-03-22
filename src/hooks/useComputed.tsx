@@ -1,6 +1,6 @@
 import { useEffect, useState, useContext } from 'react';
 import SyncStateReactContext from '../components/Context';
-import { ComputeCallback, DocStore } from '@syncstate/core';
+import { ComputeCallback, DocStore } from '@nicolaspanda/syncstate-core';
 
 export function useComputed(subtree: string, computeCallback: ComputeCallback) {
   const store: DocStore = useContext(SyncStateReactContext);
